@@ -2,8 +2,8 @@ desc "deploy"
 task :deploy do
   system %{
     git checkout gh-pages &&
-    git rebase master &&
+    git rebase main &&
     git push origin gh-pages &&
-    git checkout master
+    git checkout main
   }
 end
