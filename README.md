@@ -1,3 +1,3 @@
 # vigo.io
 
-My official webpage ?
+My official page for profile links.
