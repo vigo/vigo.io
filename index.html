@@ -6,6 +6,15 @@
     <title>Uğur "vigo" Özyılmazel &middot; Just another nerd...</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <style>
+        p.debug {
+            padding: 1em;
+            background: #ccc;
+            position: fixed;
+            left: 0;
+            z-index: 9999;
+            &::after { content: " mobile"; }
+        }
+
         body {
             color: #555;
         }
@@ -36,22 +45,45 @@
             border: 4px solid black;
         }
         
+
+        @media screen and (max-width: 768px) {
+/*            body { background: #888; }*/
+            .section-header h1.title { font-size: 2rem; }
+            .section-header p.subtitle { font-size: 1.5rem; }
+            .section-header, .section-skills { padding-bottom: 0; }
+            
+            .section-skills li { font-size: 80%; }
+            .section-links li { font-size: 60%; }
+        }
+        
         @media screen and (min-width: 769px) {
-/*            body {*/
-/*                background: green;*/
-/*            }*/
+/*            body { background: #ff9; }*/
+            p.debug::after { content: " tablet"; }
         }
         
         @media screen and (min-width: 1024px) {
-/*            body {*/
-/*                background: blue;*/
-/*            }*/
+/*            body { background: #ffb; }*/
+            p.debug::after { content: " desktop"; }
 
-            .responsive-pull-right {
-                float: right;
-            }
+            .responsive-pull-right { float: inline-end; }
+            .responsive-pull-right img { margin-left: auto; }
+            .section li { font-size: 65%; }
+            .responsive-pull-right img { width: 60%; }
+        }
+
+        @media screen and (min-width: 1216px) {
+/*            body { background: #ffd; }*/
+            p.debug::after { content: " widescreen"; }
+            .section li { font-size: 80%; }
+            .responsive-pull-right img { width: 80%; }
+        }
+        @media screen and (min-width: 1408px) {
+/*            body { background: #ccc; }*/
+            p.debug::after { content: " fullhd"; }
+            .section li { font-size: 100%; }
             .responsive-pull-right img {
                 width: 80%;
+                margin-left: auto;
             }
         }
     </style>
@@ -68,14 +100,15 @@
     </script>
 </head>
 <body>
-    <section class="section">
+    <!-- <p class="debug"></p> -->
+    <section class="section section-header">
         <div class="container">
             <h1 class="title is-2">Uğur &ldquo;vigo&rdquo; Özyılmazel</h1>
             <p class="subtitle is-3">Just another nerd...</p>
         </div>
     </section>
 
-    <section class="section">
+    <section class="section section-skills">
         <div class="container">
             <figure class="image responsive-pull-right">
               <img alt="Photograph of Uğur Özyılmazel" src="https://avatars.githubusercontent.com/u/82952?v=4">
@@ -135,7 +168,7 @@
             </div>
         </div>
     </section>
-    <section class="section">
+    <section class="section section-links">
         <div class="container">
             <h2 class="title">Links</h2>
             <div class="is-size-4">
