@@ -6,6 +6,25 @@
     <title>Uğur "vigo" Özyılmazel &middot; Just another nerd...</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <style>
+        body {
+            color: #555;
+        }
+        body strong {
+            color: black;
+        }
+        .section h2 {
+            color: #0000dd;
+        }
+        .section a {
+            color: #7777ff;
+        }
+        .section a:hover {
+            color: #aaaaff;
+        }
+        .section .icon {
+            color: #4444dd;
+        }
+        
         li:not(:last-of-type) { margin-bottom: .7rem; }
         .responsive-pull-right {
             float: none;
@@ -36,6 +55,17 @@
             }
         }
     </style>
+    <script>
+        let liame = null;
+        document.addEventListener('DOMContentLoaded', () => {
+            liame = "hthebmlvyznmry\100tznvy\056pbz".replace(/[a-zA-Z]/g, (c) => {
+                return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);
+            });
+            let cnt = document.getElementById("mpeml");
+            cnt.href = `mailto:${liame}?subject=vigo.io`;
+            cnt.text = `${liame}`;
+        });
+    </script>
 </head>
 <body>
     <section class="section">
@@ -85,7 +115,15 @@
                         Heavy fanatic of <strong>C16</strong>,
                         <strong>C64</strong>, <strong>A1200</strong>,
                         <strong>Open-Source</strong> and
-                        <strong>Demoscene</strong>! (35+)</li>
+                        <strong>Demoscene</strong>! (35+)
+                    </li>
+                    <li>
+                        Experienced in <strong>Teaching</strong> (7+), 
+                        <strong>Python</strong>, 
+                        <strong>Ruby</strong>,
+                        <strong>Bash</strong>,
+                        <strong>Golang</strong>,
+                    </li>
                     <li>
                         Interested in building <strong>tools</strong> and
                         <strong>utilities</strong>.
@@ -102,130 +140,136 @@
             <h2 class="title">Links</h2>
             <div class="is-size-4">
                 <ul class="custom">
-                    <li>
+                    <li class="mb-5">
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fas fa-home"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://ugur.ozyilmazel.com" target="_blank">https://ugur.ozyilmazel.com</a></span>
+                            <span class="icon"><i class="fas fa-at"></i></span>
+                            <span>&nbsp;<a id="mpeml" title="My public email" class="has-text-weight-medium" href="#" target="_blank">#</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fas fa-home"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://bento.me/vigo" target="_blank">https://bento.me/vigo</a></span>
+                            <span class="icon"><i class="fas fa-home"></i></span>
+                            <span>&nbsp;<a title="My personal homepage and blog" class="has-text-weight-medium" href="#" target="_blank">https://ugur.ozyilmazel.com</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fas fa-home"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://polar.sh/vigo" target="_blank">https://polar.sh/vigo</a></span>
+                            <span class="icon"><i class="fas fa-home"></i></span>
+                            <span>&nbsp;<a title="My social network links" class="has-text-weight-medium" href="https://bento.me/vigo" target="_blank">https://bento.me/vigo</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fab fa-linkedin"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://www.linkedin.com/in/ugurozyilmazel" target="_blank">https://www.linkedin.com/in/ugurozyilmazel</a></span>
+                            <span class="icon"><i class="fas fa-home"></i></span>
+                            <span>&nbsp;<a title="You can support my open source projects" class="has-text-weight-medium" href="https://polar.sh/vigo" target="_blank">https://polar.sh/vigo</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fas fa-building"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://vbyazilim.com" target="_blank">https://vbyazilim.com</a></span>
+                            <span class="icon"><i class="fab fa-linkedin"></i></span>
+                            <span>&nbsp;<a title="My LinkedIn profile" class="has-text-weight-medium" href="https://www.linkedin.com/in/ugurozyilmazel" target="_blank">https://www.linkedin.com/in/ugurozyilmazel</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fab fa-github"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://github.com/vigo" target="_blank">https://github.com/vigo</a></span>
+                            <span class="icon"><i class="fas fa-building"></i></span>
+                            <span>&nbsp;<a title="My company&rsquo;s website" class="has-text-weight-medium" href="https://vbyazilim.com" target="_blank">https://vbyazilim.com</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fab fa-docker"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://hub.docker.com/u/vigo/" target="_blank">https://hub.docker.com/u/vigo/</a></span>
+                            <span class="icon"><i class="fab fa-github"></i></span>
+                            <span>&nbsp;<a title="My GitHub profile" class="has-text-weight-medium" href="https://github.com/vigo" target="_blank">https://github.com/vigo</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fab fa-github"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://github.com/vbyazilim" target="_blank">https://github.com/vbyazilim</a></span>
+                            <span class="icon"><i class="fab fa-docker"></i></span>
+                            <span>&nbsp;<a title="My DockerHub profile" class="has-text-weight-medium" href="https://hub.docker.com/u/vigo/" target="_blank">https://hub.docker.com/u/vigo/</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fas fa-laptop-code"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://rubygems.org/profiles/vigo" target="_blank">https://rubygems.org/profiles/vigo</a></span>
+                            <span class="icon"><i class="fab fa-github"></i></span>
+                            <span>&nbsp;<a title="My company&rsquo;s GitHub profile" class="has-text-weight-medium" href="https://github.com/vbyazilim" target="_blank">https://github.com/vbyazilim</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fas fa-laptop-code"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://pypi.org/user/vigo" target="_blank">https://pypi.org/user/vigo</a></span>
+                            <span class="icon"><i class="fas fa-gem"></i></span>
+                            <span>&nbsp;<a title="My RubyGems profile" class="has-text-weight-medium" href="https://rubygems.org/profiles/vigo" target="_blank">https://rubygems.org/profiles/vigo</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fa-brands fa-hashnode"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://vigos.hashnode.dev/" target="_blank">https://vigos.hashnode.dev/</a></span>
+                            <span class="icon"><i class="fab fa-python"></i></span>
+                            <span>&nbsp;<a title="My Python Package Index profile" class="has-text-weight-medium" href="https://pypi.org/user/vigo" target="_blank">https://pypi.org/user/vigo</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fa-brands fa-dev"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://dev.to/vigo" target="_blank">https://dev.to/vigo</a></span>
+                            <span class="icon"><i class="fa-brands fa-hashnode"></i></span>
+                            <span>&nbsp;<a title="My Hashnode profile (blog)" class="has-text-weight-medium" href="https://vigos.hashnode.dev/" target="_blank">https://vigos.hashnode.dev/</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fa-brands fa-osi"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://opensource-heroes.com/u/vigo" target="_blank">https://opensource-heroes.com/u/vigo</a></span>
+                            <span class="icon"><i class="fa-brands fa-dev"></i></span>
+                            <span>&nbsp;<a title="My DevTo profile (blog)" class="has-text-weight-medium" href="https://dev.to/vigo" target="_blank">https://dev.to/vigo</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fab fa-twitter"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://twitter.com/vigobronx" target="_blank">https://twitter.com/vigobronx</a></span>
+                            <span class="icon"><i class="fa-brands fa-osi"></i></span>
+                            <span>&nbsp;<a title="My Open Source Heroes profile" class="has-text-weight-medium" href="https://opensource-heroes.com/u/vigo" target="_blank">https://opensource-heroes.com/u/vigo</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fab fa-twitter"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://twitter.com/vbyazilim" target="_blank">https://twitter.com/vbyazilim</a></span>
+                            <span class="icon"><i class="fab fa-twitter"></i></span>
+                            <span>&nbsp;<a title="My Twitter profile" class="has-text-weight-medium" href="https://twitter.com/vigobronx" target="_blank">https://twitter.com/vigobronx</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fab fa-product-hunt"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://www.producthunt.com/@vigoo" target="_blank">https://www.producthunt.com/@vigoo</a></span>
+                            <span class="icon"><i class="fab fa-twitter"></i></span>
+                            <span>&nbsp;<a title="My company&rsquo;s Twitter profile" class="has-text-weight-medium" href="https://twitter.com/vbyazilim" target="_blank">https://twitter.com/vbyazilim</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fas fa-cube"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://csdb.dk/scener/?id=8379" target="_blank">CSDB</a></span>
+                            <span class="icon"><i class="fab fa-product-hunt"></i></span>
+                            <span>&nbsp;<a title="My Product Hunt profile" class="has-text-weight-medium" href="https://www.producthunt.com/@vigoo" target="_blank">https://www.producthunt.com/@vigoo</a></span>
+                        </span>
+                    </li>
+                    <li class="mt-5">
+                        <span class="icon-text">
+                            <span class="icon"><i class="fas fa-cube"></i></span>
+                            <span>&nbsp;<a title="My C64 Demoscene profile" class="has-text-weight-medium" href="https://csdb.dk/scener/?id=8379" target="_blank">CSDB</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fas fa-cube"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://www.pouet.net/user.php?who=4721" target="_blank">Pouet</a></span>
+                            <span class="icon"><i class="fas fa-cube"></i></span>
+                            <span>&nbsp;<a title="My Pouet Demoscene profile" class="has-text-weight-medium" href="https://www.pouet.net/user.php?who=4721" target="_blank">Pouet</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fas fa-cube"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="http://janeway.exotica.org.uk/author.php?id=11962" target="_blank">Amiga Exotica</a></span>
+                            <span class="icon"><i class="fas fa-cube"></i></span>
+                            <span>&nbsp;<a title="My Amiga Demoscene profile" class="has-text-weight-medium" href="http://janeway.exotica.org.uk/author.php?id=11962" target="_blank">Amiga Exotica</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fas fa-cube"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://demozoo.org/sceners/6273" target="_blank">Demozoo</a></span>
+                            <span class="icon"><i class="fas fa-cube"></i></span>
+                            <span>&nbsp;<a title="My Demoscene profile" class="has-text-weight-medium" href="https://demozoo.org/sceners/6273" target="_blank">Demozoo</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-info"><i class="fas fa-cube"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://www.demoparty.net/users/vigo" target="_blank">Demoparty.net</a></span>
+                            <span class="icon"><i class="fas fa-cube"></i></span>
+                            <span>&nbsp;<a title="My Demoparty.net profile" class="has-text-weight-medium" href="https://www.demoparty.net/users/vigo" target="_blank">Demoparty.net</a></span>
                         </span>
                     </li>
                 </ul>
@@ -237,9 +281,9 @@
         <div class="container">
             <div class="content">
                 <p>
-                    CSS by <a class="has-text-weight-medium" href="https://bulma.io" target="_blank">Bulma</a>
+                    CSS by <a class="has-text-weight-medium" href="https://bulma.io" target="_blank">Bulma v0.9.1</a>
                     Hosting by <a class="has-text-weight-medium" href="https://github.com" target="_blank">GitHub Pages</a>.
-                    Updated at March 18, <strong>2024</strong>
+                    Updated at April 23, &copy; <strong>2024</strong>
                 </p>
             </div>
         </div>
