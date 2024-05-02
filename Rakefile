@@ -46,7 +46,7 @@ task :deploy, [:revision] do |_, args|
   end
 
   if $?.exitstatus == 0
-    Rake::Task[:bump].invoke(args.version)
+    Rake::Task[:bump].invoke(args.revision)
   
     system %{
       git push
