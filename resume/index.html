@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uğur "vigo" Özyılmazel &middot; Just another nerd...</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <style>
+        p:not(:last-child) {
+            margin-bottom: 1.5vh;
+        }
+
+        .custom a {
+            color: inherit;
+        }
+        
+        .custom li {
+            margin-bottom: 1.2vh;
+        }
+        
+        h2.title.is-2 {
+            background-color: #eeeeee;
+            font-size: calc(2.8vw + 14px);
+        }
+        section.experience {
+            background-color: #dddddd;
+            padding-bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <section class="section">
@@ -74,21 +96,40 @@
         </div>
     </section>
 
-    <div class="container">
-        <h2 class="title is-2">PROFESSIONAL EXPERIENCE</h2>
-    </div>
+    <section class="section experience">
+        <div class="container">
+            <div class="container">
+                <h2 class="title is-2">PROFESSIONAL EXPERIENCE</h2>
+            </div>
+        </div>
+    </section>
 
     <section class="section">
         <div class="container">
             <h3 class="title">Madduck, Istanbul [Dec 2022 - Current]</h3>
             <h4 class="subtitle">Head of Software Engineering</h4>
             <div class="is-size-4">
-                <ul>
-                    <li>Responsible for the entire software operations of the company.</li>
-                    <li>Led backend and infrastructure teams.</li>
-                    <li>Led frontend and mobile app development teams.</li>
-                    <li>Set development culture and strategies.</li>
-                </ul>
+                <p>
+                    I established rock-solid foundations for software
+                    development methodologies within our teams. I
+                    significantly enhanced our expertise in Go and Python. I
+                    strived to fix, patch, and build as much as possible.
+                </p>
+                <p>
+                    I initiated and implemented the &ldquo;infrastructure as code&rdquo;
+                    approach. I have developed a REST API service that manages
+                    subscription processes for the Apple App Store using the
+                    Go language. I implemented template services and libraries
+                    using Go that form the framework of the backend services
+                    we will develop in the future.
+                </p>
+                <p>
+                    The entire software operations of the company are under my
+                    responsibility. I lead backend and infrastructure teams,
+                    mobile app development teams, frontend teams, and
+                    third-party relations. I also define the company’s
+                    development culture and development strategies.
+                </p>
             </div>
         </div>
     </section>
@@ -98,14 +139,28 @@
             <h3 class="title">Delivery Hero Tech Hub, Istanbul [Oct 2021 - Dec 2022]</h3>
             <h4 class="subtitle">Principal Engineer</h4>
             <div class="is-size-4">
-                <ul>
-                    <li>Hired as Golang and Python ambassador.</li>
-                    <li>Provided Golang training to nearly <strong>300</strong> developers and teams.</li>
-                    <li>Prepared and evaluated more than <strong>250</strong> Python and Golang candidates' assignments.</li>
-                    <li>Conducted <strong>~400</strong> technical interviews with Golang and Python candidates.</li>
-                    <li>Embedded the culture of open source software development, prepared resources and internal source code repositories.</li>
-                    <li>Developed golang microservices, deployment automations.</li>
-                </ul>
+                <p>
+                    I taught the Go programming language, basic Unix and
+                    command-line skills, version control, and related tools
+                    and frameworks. I provided support to teams related to the
+                    Python programming language. I assisted the talent
+                    acquisition team with software developer interviews and
+                    evaluated hundreds of candidates&rsquo; assignments. I motivated
+                    my team to contribute to open source projects. I initiated
+                    documentation projects to set software development
+                    standards.
+                </p>
+                <p>
+                    Hired as a Go and Python ambassador, I provided Go
+                    training to nearly 300 developers and teams. I prepared
+                    and evaluated more than 250 Python and Go candidates&rsquo;
+                    assignments and conducted approximately 400 technical
+                    interviews with candidates proficient in these languages.
+                    I embedded the culture of open source software
+                    development, prepared resources, and organized internal
+                    source code repositories. Additionally, I developed Go
+                    microservices and deployment automations.
+                </p>
             </div>
         </div>
     </section>
@@ -115,15 +170,28 @@
             <h3 class="title">Hybrone, Istanbul [Jan 2020 - Sep 2021]</h3>
             <h4 class="subtitle">Tech Manager</h4>
             <div class="is-size-4">
-                <ul>
-                    <li>Hired as head of software engineering, solutions and developer relations.</li>
-                    <li>Delivered full-stack <strong>Ruby</strong>/<strong>Python</strong> applications and microservices.</li>
-                    <li>Delivered <strong>Golang</strong> microservices with <strong>gRPC</strong> and various database options.</li>
-                    <li>Created various Golang modules, libraries and wrappers.</li>
-                    <li>Coordinated the software design of Hybrone platform with <strong>18+</strong> microservices and mobile applications.</li>
-                    <li>Supported the frontend teams to ship and build JavaScript applications.</li>
-                    <li>Provided various software development training to team mates.</li>
-                </ul>
+                <p>
+                    I led the Hybrone project team, developing small
+                    applications for Raspberry Pi and similar IoT devices, and
+                    writing code for both backend and frontend. My technical
+                    stack included Go, Python, Ruby, and JavaScript.
+                    Additionally, I conducted trainings for my team’s software
+                    developers to enhance their skills and knowledge.
+                </p>
+                <p>
+                    Hired as the head of software engineering, solutions, and
+                    developer relations, I was responsible for delivering
+                    full-stack applications and microservices using Ruby and
+                    Python, as well as Go microservices utilizing gRPC and
+                    various databases. I created various Go modules,
+                    libraries, and wrappers, and coordinated the software
+                    design of the Hybrone platform, which included over 18
+                    microservices and mobile applications. I also supported
+                    the frontend teams in developing and deploying JavaScript
+                    applications and provided extensive software development
+                    training to my teammates.
+                </p>
+                
             </div>
         </div>
     </section>
@@ -133,12 +201,18 @@
             <h3 class="title">Demirören Teknoloji, Istanbul [Feb 2019 - Dec 2019]</h3>
             <h4 class="subtitle">Sr. Software Development Manager</h4>
             <div class="is-size-4">
-                <ul>
-                    <li>Hired as head of DHA News Agency Platform Engineer</li>
-                    <li>Built News Management Platform with using <strong>Python</strong>, <strong>Django</strong> and <strong>Golang</strong></li>
-                    <li>Designed CI/CD pipeline for News Management Platform</li>
-                    <li>Coordinated the development and devOps teams</li>
-                </ul>
+                <p>
+                    I led the DHA News Management Platform team, successfully
+                    shipping the platform using Python, Django, and Go.
+                    Additionally, I designed the CI/CD pipeline for the
+                    platform and coordinated the development and DevOps teams.
+                </p>
+                <p>
+                    Hired as the Head of Platform Engineering at DHA News
+                    Agency, I built the News Management Platform using Python,
+                    Django, and Go. I also designed the CI/CD pipeline for the
+                    platform and coordinated the development and DevOps teams.
+                </p>
             </div>
         </div>
     </section>
@@ -148,15 +222,26 @@
             <h3 class="title">Biges, Istanbul [Mar 2018 - Jan 2019]</h3>
             <h4 class="subtitle">Sr. Software Solutions Architect</h4>
             <div class="is-size-4">
-                <ul>
-                    <li>Hired as head of Alarm and Data Monitoring Platform</li>
-                    <li>Led alarm management (burglary, fire, motion detection) platform</li>
-                    <li>Delivered B2B e-commerce platform with using <strong>Django</strong></li>
-                    <li>Integrated the CRM tools to B2B service</li>
-                    <li>Built the microservices for the physical devices to integrate alarm management platforms such as cameras, burglar alarms, fire alarms.</li>
-                    <li>Coordinated the company's transformation to research and development center</li>
-                    <li>Provided <strong>Python</strong>, <strong>Linux</strong>, <strong>Docker</strong> training for the developers</li>
-                </ul>
+                <p>
+                    I led the Biges software development team and initiated
+                    the first seeds of the Hybrone platform project. We
+                    successfully shipped the Biges B2B e-commerce web platform
+                    with a very small team using Python and Django.
+                    Additionally, we integrated third-party CRM software into
+                    our B2B platform.
+                </p>
+                <p>
+                    Hired as the Head of Alarm and Data Monitoring Platforms,
+                    I led the development of an alarm management platform for
+                    burglary, fire, and motion detection. We delivered a B2B
+                    e-commerce platform using Django and integrated CRM tools
+                    into the service. I also built microservices for physical
+                    devices like cameras and burglar alarms to integrate with
+                    alarm management platforms. Furthermore, I coordinated the
+                    company&rsquo;s transformation into a research and development
+                    center and provided training in Python, Linux, and Docker
+                    to developers.
+                </p>
             </div>
         </div>
     </section>
@@ -167,12 +252,24 @@
             <h3 class="title">Istanbul Bilgi University, Istanbul [June 2001 - Feb 2018]</h3>
             <h4 class="subtitle">Head of Web Development</h4>
             <div class="is-size-4">
-                <ul>
-                    <li>Hired as head of web application development</li>
-                    <li>Built, deployed, maintained <strong>100+</strong> <strong>Python</strong> / <strong>Django</strong> applications</li>
-                    <li>Built the online education platforms using multiple technologies over time</li>
-                    <li>Introduced the open source technologies to the department</li>
-                </ul>
+                <p>
+                    In the early 2000s, I developed the first web-based online
+                    education application and crafted some of the university&rsquo;s
+                    most significant websites. I introduced the SVN, Git, PHP,
+                    Python, and Django ecosystems to the department. I managed
+                    the transition from Microsoft technologies to open source
+                    software and tools. Over time, I built and shipped
+                    hundreds of web applications.
+                </p>
+                <p>
+                    I technically led the web application team, developing and
+                    implementing strategies for development, deployment, and
+                    release management. I selected the tech stack for
+                    developing and maintaining web applications, ensuring
+                    optimal performance and scalability. Additionally, I built
+                    and deployed hundreds of web applications, managing the
+                    entire lifecycle from conception to deployment.
+                </p>
             </div>
         </div>
     </section>
@@ -182,24 +279,23 @@
             <h3 class="title">Alo Bilgi, Istanbul [Jan 1991 - May 1994]</h3>
             <h4 class="subtitle">Game Developer</h4>
             <div class="is-size-4">
-                <ul>
-                    <li>Built the first <strong>commercial TV Game</strong> in Turkey (http://bit.ly/dinozorus) for Amiga 1200 via assembly language (68020).</li>
-                    <li>Built <strong>IVR games</strong> and many other TV games (live shows).</li>
-                </ul>
+                <p>
+                    In the early 90s, I created &ldquo;Dinozorus&rdquo; the first
+                    commercial TV game in Turkey. I also authored several
+                    other games for Turkish national TV channels, including
+                    &ldquo;Küp Küp&rdquo;, &ldquo;Sokak Dövüşçüsü&rdquo; and a football game. I led a
+                    game development team that successfully developed and
+                    launched &ldquo;Tele Ralli&rdquo; a two-player game played live over
+                    landline phones. For these projects, we utilized Amiga
+                    computers, programming in 68000/68020 assembly language,
+                    and employed tools like &ldquo;Deluxe Paint&rdquo;, &ldquo;Asm One&rdquo;, &ldquo;Seka&rdquo;,
+                    &ldquo;Trash&rsquo;em One&rdquo; and &ldquo;Protracker&rdquo;.
+                </p>
             </div>
         </div>
     </section>
 
 
-    <style>
-        .custom a {
-            color: inherit;
-        }
-        
-        .custom li {
-            margin-bottom: .65em;
-        }
-    </style>
     <section class="section">
         <div class="container">
             <h2 class="title">Links</h2>
@@ -207,50 +303,56 @@
                 <ul class="custom">
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-black"><i class="fas fa-home"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://ugur.ozyilmazel.com" target="_blank">https://ugur.ozyilmazel.com</a></span>
+                            <span class="icon"><i class="fas fa-home"></i></span>
+                            <span>&nbsp;<a title="My personal homepage and blog" class="has-text-weight-medium" href="#" target="_blank">https://ugur.ozyilmazel.com</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-black"><i class="fab fa-linkedin"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://www.linkedin.com/in/ugurozyilmazel" target="_blank">https://www.linkedin.com/in/ugurozyilmazel</a></span>
+                            <span class="icon"><i class="fab fa-linkedin"></i></span>
+                            <span>&nbsp;<a title="My LinkedIn profile" class="has-text-weight-medium" href="https://www.linkedin.com/in/ugurozyilmazel" target="_blank">https://www.linkedin.com/in/ugurozyilmazel</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-black"><i class="fas fa-building"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://vbyazilim.com" target="_blank">https://vbyazilim.com</a></span>
+                            <span class="icon"><i class="fas fa-building"></i></span>
+                            <span>&nbsp;<a title="My company&rsquo;s website" class="has-text-weight-medium" href="https://vbyazilim.com" target="_blank">https://vbyazilim.com</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-black"><i class="fab fa-github"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://github.com/vigo" target="_blank">https://github.com/vigo</a></span>
+                            <span class="icon"><i class="fab fa-github"></i></span>
+                            <span>&nbsp;<a title="My GitHub profile" class="has-text-weight-medium" href="https://github.com/vigo" target="_blank">https://github.com/vigo</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-black"><i class="fab fa-docker"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://hub.docker.com/u/vigo/" target="_blank">https://hub.docker.com/u/vigo/</a></span>
+                            <span class="icon"><i class="fab fa-github"></i></span>
+                            <span>&nbsp;<a title="My company&rsquo;s GitHub profile" class="has-text-weight-medium" href="https://github.com/vbyazilim" target="_blank">https://github.com/vbyazilim</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-black"><i class="fab fa-github"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://github.com/vbyazilim" target="_blank">https://github.com/vbyazilim</a></span>
+                            <span class="icon"><i class="fab fa-docker"></i></span>
+                            <span>&nbsp;<a title="My DockerHub profile" class="has-text-weight-medium" href="https://hub.docker.com/u/vigo/" target="_blank">https://hub.docker.com/u/vigo/</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-black"><i class="fas fa-laptop-code"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://rubygems.org/profiles/vigo" target="_blank">https://rubygems.org/profiles/vigo</a></span>
+                            <span class="icon"><i class="fas fa-gem"></i></span>
+                            <span>&nbsp;<a title="My RubyGems profile" class="has-text-weight-medium" href="https://rubygems.org/profiles/vigo" target="_blank">https://rubygems.org/profiles/vigo</a></span>
                         </span>
                     </li>
                     <li>
                         <span class="icon-text">
-                            <span class="icon has-text-black"><i class="fas fa-laptop-code"></i></span>
-                            <span>&nbsp;<a class="has-text-weight-medium" href="https://pypi.org/user/vigo" target="_blank">https://pypi.org/user/vigo</a></span>
+                            <span class="icon"><i class="fab fa-python"></i></span>
+                            <span>&nbsp;<a title="My Python Package Index profile" class="has-text-weight-medium" href="https://pypi.org/user/vigo" target="_blank">https://pypi.org/user/vigo</a></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="icon-text">
+                            <span class="icon"><i class="fab fa-twitter"></i></span>
+                            <span>&nbsp;<a title="My Twitter profile" class="has-text-weight-medium" href="https://twitter.com/vigobronx" target="_blank">https://twitter.com/vigobronx</a></span>
                         </span>
                     </li>
                 </ul>
@@ -264,7 +366,8 @@
                 <p>
                     CSS by <a class="has-text-weight-medium has-text-black" href="https://bulma.io" target="_blank">Bulma</a>
                     Hosting by <a class="has-text-weight-medium has-text-black" href="https://github.com" target="_blank">GitHub Pages</a>.
-                    Updated at February 13, <strong>2023</strong>
+                    Updated at <span>May 2</span>, &copy; <strong>2024</strong>
+                    Version <strong>0.0.0</strong>
                 </p>
             </div>
         </div>
