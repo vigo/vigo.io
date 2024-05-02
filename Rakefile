@@ -30,10 +30,13 @@ task :deploy, [:revision] do |_, args|
   current_month = now.strftime("%B")
   current_day = now.strftime("%e")
   current_year = now.strftime("%Y")
+  current_time = now.strftime("%H:%M")
 
   system %{
     sed -i "" 's/\\(Updated at \\)\\(<span>\\)[^<]*\\(<\\/span>, &copy; \\)\\(<strong>\\)[^<]*\\(<\\/strong>\\)/\\1\\2#{current_month}#{current_day}\\3\\4#{current_year}\\5/' index.html
     sed -i "" 's/\\(Updated at \\)\\(<span>\\)[^<]*\\(<\\/span>, &copy; \\)\\(<strong>\\)[^<]*\\(<\\/strong>\\)/\\1\\2#{current_month}#{current_day}\\3\\4#{current_year}\\5/' resume/index.html
+    git add .
+    git commit -m '[UPDATE] - #{current_month} #{current_day}, #{current_year} at #{current_time}'
   }
 
   if $?.exitstatus == 0
