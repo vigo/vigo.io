@@ -35,9 +35,16 @@ task :deploy, [:revision] do |_, args|
   system %{
     sed -i "" 's/\\(Updated at \\)\\(<span>\\)[^<]*\\(<\\/span>, &copy; \\)\\(<strong>\\)[^<]*\\(<\\/strong>\\)/\\1\\2#{current_month}#{current_day}\\3\\4#{current_year}\\5/' index.html
     sed -i "" 's/\\(Updated at \\)\\(<span>\\)[^<]*\\(<\\/span>, &copy; \\)\\(<strong>\\)[^<]*\\(<\\/strong>\\)/\\1\\2#{current_month}#{current_day}\\3\\4#{current_year}\\5/' resume/index.html
-    git add .
-    git commit -m '[UPDATE] - #{current_month} #{current_day}, #{current_year} at #{current_time}'
   }
+
+  unless `git status -s | wc -l`.strip.to_i.zero?
+    system %{
+      git add .
+      git commit -m '[UPDATE] - #{current_month} #{current_day}, #{current_year} at #{current_time}'
+      git push
+    }
+    abort "auto add and commit failed" if $?.exitstatus != 0
+  end
 
   if $?.exitstatus == 0
     Rake::Task[:bump].invoke(args.version)
