@@ -32,8 +32,8 @@ task :deploy, [:revision] do |_, args|
   current_time = now.strftime("%H:%M")
 
   system %{
-    sed -i "" 's/\\(Updated at \\)\\(<span>\\)[^<]*\\(<\\/span>, &copy; \\)\\(<strong>\\)[^<]*\\(<\\/strong>\\)/\\1\\2#{current_month}#{current_day}\\3\\4#{current_year}\\5/' index.html
-    sed -i "" 's/\\(Updated at \\)\\(<span>\\)[^<]*\\(<\\/span>, &copy; \\)\\(<strong>\\)[^<]*\\(<\\/strong>\\)/\\1\\2#{current_month}#{current_day}\\3\\4#{current_year}\\5/' resume/index.html
+    sed -i "" 's/\\(Updated at \\)\\(<span>\\)[^<]*\\(<\\/span>, &copy; \\)\\(<strong>\\)[^<]*\\(<\\/strong>\\)/\\1\\2#{current_month}#{current_day} at #{current_time}\\3\\4#{current_year}\\5/' index.html
+    sed -i "" 's/\\(Updated at \\)\\(<span>\\)[^<]*\\(<\\/span>, &copy; \\)\\(<strong>\\)[^<]*\\(<\\/strong>\\)/\\1\\2#{current_month}#{current_day} at #{current_time}\\3\\4#{current_year}\\5/' resume/index.html
   }
 
   unless `git status -s | wc -l`.strip.to_i.zero?
