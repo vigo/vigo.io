@@ -19,7 +19,6 @@ task :bump, [:revision] => [:has_bumpversion] do |_, args|
   end
 
   system "bumpversion #{args.revision}"
-  exit $?.exitstatus unless ENV['RAKE_CONTINUE']
 end
 
 desc "deploy"
