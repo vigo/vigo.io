@@ -37,6 +37,7 @@ task :deploy, [:revision] do |_, args|
     sed -i "" 's/\\(Updated at \\)\\(<span>\\)[^<]*\\(<\\/span>, &copy; \\)\\(<strong>\\)[^<]*\\(<\\/strong>\\)/\\1\\2#{current_month}#{current_day}\\3\\4#{current_year}\\5/' resume/index.html
     git add .
     git commit -m '[UPDATE] - #{current_month} #{current_day}, #{current_year} at #{current_time}'
+    git push
   }
 
   if $?.exitstatus == 0
@@ -47,6 +48,7 @@ task :deploy, [:revision] do |_, args|
       git rebase main &&
       git push origin gh-pages &&
       git checkout main
+      git push --tags
     }
     exit $?.exitstatus
   else
