@@ -1,5 +1,5 @@
 [![pages-build-deployment](https://github.com/vigo/vigo.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/vigo/vigo.io/actions/workflows/pages/pages-build-deployment)
-![Version](https://img.shields.io/badge/version-0.1.0-orange.svg)
+![Version](https://img.shields.io/badge/version-0.1.1-orange.svg)
 
 # vigo.io
 
