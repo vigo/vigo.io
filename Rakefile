@@ -52,6 +52,7 @@ task :deploy, [:revision] do |_, args|
       git push
       git push --tags
       git checkout gh-pages &&
+      git pull &&
       git rebase main &&
       git push origin gh-pages &&
       git checkout main
