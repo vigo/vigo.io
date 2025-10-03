@@ -9,7 +9,7 @@ task :command_exists, [:command] do |_, args|
 end
 
 task :has_bumpversion do
-  Rake::Task['command_exists'].invoke('bumpversion')
+  Rake::Task['command_exists'].invoke('bump-my-version')
 end
 
 task :bump, [:revision] => [:has_bumpversion] do |_, args|
@@ -18,7 +18,7 @@ task :bump, [:revision] => [:has_bumpversion] do |_, args|
     abort "Please provide valid revision: #{AVAILABLE_REVISIONS.join(',')}"
   end
 
-  system "bumpversion #{args.revision}"
+  system "bump-my-version bump #{args.revision}"
 end
 
 desc "deploy"
